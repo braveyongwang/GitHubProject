@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #parent{ width:100px; height:30px; position: relative;}
+        #my_jd{ width:100px; height: 30px; border: 1px gray solid;
+            background-color: #fff; text-align: center; line-height: 30px;
+            cursor: pointer; position: relative; color:gray;}
+        #menu{ width: 300px; height: 200px; background-color: #fff;
+            border: 1px gray solid; position: absolute; top: 29px; left: 0;
+            display: none; color:gray;}
+        #parent:hover #my_jd{ border-bottom: 0; z-index: 100;}
+        #parent:hover #menu{ display: block; z-index: 50;}
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="my_jd">我的京东</div>
+    <div id="menu">菜单 溢出内容显示</div>
+</div>
+</body>
+</html>
